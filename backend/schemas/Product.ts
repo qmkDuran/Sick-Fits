@@ -1,9 +1,14 @@
-import { integer, relationship, select, text } from '@keystone-next/fields';
+import { integer, select, text, relationship } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
+import { rules, isSignedIn } from '../access';
 
 export const Product = list({
-  // TODO:
-  // access:
+  access: {
+    create: isSignedIn,
+    read: rules.canReadProducts,
+    update: rules.canManageProducts,
+    delete: rules.canManageProducts,
+  },
   fields: {
     name: text({ isRequired: true }),
     description: text({
@@ -23,8 +28,8 @@ export const Product = list({
     status: select({
       options: [
         { label: 'Draft', value: 'DRAFT' },
-        { label: 'Available', value: 'Available' },
-        { label: 'Unavailable', value: 'Unavailable' },
+        { label: 'Available', value: 'AVAILABLE' },
+        { label: 'Unavailable', value: 'UNAVAILABLE' },
       ],
       defaultValue: 'DRAFT',
       ui: {
@@ -33,6 +38,11 @@ export const Product = list({
       },
     }),
     price: integer(),
-    // TODO: Photo
+    user: relationship({
+      ref: 'User.products',
+      defaultValue: ({ context }) => ({
+        connect: { id: context.session.itemId },
+      }),
+    }),
   },
 });

@@ -33,13 +33,13 @@ const Form = styled.form`
     border: 1px solid black;
     &:focus {
       outline: 0;
-      border-color: var(--#0000ff);
+      border-color: var(--red);
     }
   }
   button,
   input[type='submit'] {
     width: auto;
-    background: #0000ff;
+    background: red;
     color: white;
     border: 0;
     font-size: 2rem;
@@ -59,9 +59,9 @@ const Form = styled.form`
       display: block;
       background-image: linear-gradient(
         to right,
-        #0000FF 0%,
-        #33ccff 50%,
-        #0000FF 100%
+        #ff3019 0%,
+        #e2b04a 50%,
+        #ff3019 100%
       );
     }
     &[aria-busy='true']::before {

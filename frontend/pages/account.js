@@ -1,7 +1,6 @@
-export default function AccountPage() {
-  return (
-    <div>
-      <p>Account Page!</p>
-    </div>
-  );
+export default function OrderPage() {
+  return <div>
+    <p>Hello!</p>
+  </div>
 }
+
