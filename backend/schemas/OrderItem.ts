@@ -6,8 +6,8 @@ export const OrderItem = list({
   access: {
     create: isSignedIn,
     read: rules.canManageOrderItems,
-    update: () => false,
-    delete: () => false,
+    update: () => true,
+    delete: () => true,
   },
   fields: {
     name: text({ isRequired: true }),

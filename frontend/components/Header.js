@@ -9,7 +9,7 @@ const Logo = styled.h1`
   margin-left: 2rem;
   position: relative;
   z-index: 2;
-  background: red;
+  background: black;
   transform: skew(-7deg);
   a {
     color: white;
@@ -40,7 +40,7 @@ export default function Header() {
     <HeaderStyles>
       <div className="bar">
         <Logo>
-          <Link href="/">Sick fits</Link>
+          <Link href="/">Speed Shift</Link>
         </Logo>
         <Nav />
       </div>

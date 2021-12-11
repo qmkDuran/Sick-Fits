@@ -10,11 +10,11 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
   }
   html {
-    --red: #ff0000;
-    --black: #393939;
+    --red: black;
+    --black: black;
     --grey: #3A3A3A;
     --gray: var(--grey);
-    --lightGrey: #e1e1e1;
+    --lightGrey: white;
     --lightGray: var(--lightGrey);
     --offWhite: #ededed;
     --maxWidth: 1000px;
