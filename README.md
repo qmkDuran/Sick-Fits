@@ -1,5 +1,5 @@
 # Speed Shift
-A fullstack Ecommerce Website that allows the user to log in and purchase exotice vehicles for $0.01. 
+A fullstack E-commerce Website that allows the user to log in and purchase exotice vehicles for $0.01. 
 
 ## Link
 
@@ -38,28 +38,30 @@ Open up your command line and clone this repo:
 
 ```
 # Clone this repository and download the files
-$ git clone https://github.com/qmkDuran/Speed-Shift
+$ git clone https://github.com/qmkDuran/Speed-Shift.git
 
 ```
-Open up two terminals - one for the server, and one for the client:
+Open up two terminals - one for the Frontend, and one for the Backend:
 ```
-# Terminal for the server
+# Terminal for the Frontend
 $ cd into the server folder
-$ cd server
+$ cd frontend
 
 # Install dependencies
 $ npm install
+$ npm install apollo-server graphql
+$ npm i next
 
 # run the server
-$ npm start
+$ npm run dev
 
 ```
 
 
 ```
-# Terminal for the client
-$ cd into the client folder
-$ cd client
+# Terminal for the Backend
+$ cd into the backend folder
+$ cd backend
 
 $ Install dependencies
 $ npm install
