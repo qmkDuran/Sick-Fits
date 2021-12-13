@@ -1,6 +1,6 @@
 # Speed Shift
+![Screenshot](https://user-images.githubusercontent.com/84324251/145841837-d5ae067e-ac61-4a69-a9dd-474efe92b2f0.png)
 
-![Screenshot](https://user-images.githubusercontent.com/84324251/145840820-05583861-cf9d-4802-9ef3-8af130bcf116.png)
 
 Username: duran1224@yahoo.com
 Password: testing1
