@@ -1,5 +1,5 @@
 # Speed Shift
-A fullstack E-commerce Website that allows the user to log in and purchase exotice vehicles for $0.01. 
+A fullstack E-commerce Website that allows the user to log in and purchase exotice vehicles for $100. 
 
 ## Link
 
