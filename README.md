@@ -52,7 +52,7 @@ $ npm install
 $ npm install apollo-server graphql
 $ npm i next
 
-# run the server
+# Run the server
 $ npm run dev
 
 ```
@@ -66,6 +66,6 @@ $ cd backend
 $ Install dependencies
 $ npm install
 
-$ run the client app
+$ Run the client app
 $ npm start
 ```
